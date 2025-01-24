@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:rgb(174, 174, 220);
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 35px;
+  }
+  
+  .search-bar input {
+    width: 200px;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    padding: 3px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 33px;
+    color: red;
+    cursor: pointer;
+  }
+  .posters{
+    display: inline;
+  }
+  .favorite{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s ease, top 0.3s ease 0.2s;
+}
+.button{
+    
+    background-color: darksalmon;
+}
+b{
+    color: blue;
+    font-size: 20px;
+}
+.genre-button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #60b048;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.genre-button:hover {
+  background-color: #4a9f3a; 
+}
