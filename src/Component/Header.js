@@ -19,7 +19,7 @@ export const Header = () => {
     };
 
     useEffect(() => {
-        axios.get('http://localhost:5000/movies')
+        axios.get('https://movie-task-react.vercel.app/movies')
             .then(response => {
                 console.log("Fetched Movies:", response.data); // Log fetched movies
                 setAllMovies(response.data);
@@ -53,7 +53,7 @@ export const Header = () => {
                 <div className="logo">
                     <img src={img} alt="Logo" />
                 </div>
-                <div className='grid grid-cols-5 lg:flex flex-row gap-1 ' >
+                <div className='grid grid-cols-4 lg:flex flex-row gap-1 ' >
                     {/* Genre Buttons */}
                     {genres.map((genre) => (
                         <button key={genre} onClick={() => handleSelectGenre(genre)} className="genre-button">

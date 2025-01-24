@@ -9,7 +9,7 @@ const SingleMovie = () => {
     const [movie, setMovie] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/movies/${id}`)
+        axios.get(`https://movie-task-react.vercel.app/movies/${id}`)
             .then(response => {
                 setMovie(response.data);
             })
