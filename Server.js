@@ -8,10 +8,10 @@ app.use(express.json());
 
 // MySQL connection
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "root123", // Your MySQL password
-    database: "movieDB", // Your database name
+  host: "https://movie-task-react.vercel.app",
+  user: "root",
+  password: "root123", // Your MySQL password
+  database: "movieDB", // Your database name
 });
 
 db.connect((err) => {
