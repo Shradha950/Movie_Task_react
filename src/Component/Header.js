@@ -53,7 +53,7 @@ export const Header = () => {
                 <div className="logo">
                     <img src={img} alt="Logo" />
                 </div>
-                <div>
+                <div className='grid grid-cols-5 lg:flex flex-row gap-1 ' >
                     {/* Genre Buttons */}
                     {genres.map((genre) => (
                         <button key={genre} onClick={() => handleSelectGenre(genre)} className="genre-button">

@@ -9,7 +9,7 @@ export const Footer = () => {
                             backgroundColor: "rgba(0, 0, 0, 0.2)}}",
                             fontSize: '14px'
                         }}>
-                        © 2020 Copyright
+                        © 2025 Copyright
                     </div>
                 </div>
             </footer>
