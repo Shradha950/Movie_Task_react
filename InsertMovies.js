@@ -5,12 +5,13 @@ const mysql = require('mysql2');
 const jsonData = JSON.parse(fs.readFileSync('db.json', 'utf-8')).movieData;
 
 // Create MySQL connection
-const db = mysql.createConnection({
-  host: "https://movie-task-react.vercel.app",
-  user: "root",
-  password: "root123", // Your MySQL password
-  database: "movieDB", // Your database name
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'root123',
+  database: 'movieDB'
 });
+
 // Insert movie data into the movies table
 jsonData.forEach(movie => {
   const title = movie.title;
